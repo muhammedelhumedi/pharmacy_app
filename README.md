@@ -1,16 +1,18 @@
-# pill_app_clean
+# pharmacy_app
 
-A new Flutter project.
+Flutter app (Android/iOS/Web) with localization.
 
-## Getting Started
+## Setup
+```bash
+flutter pub get
+flutter run
+```
 
-This project is a starting point for a Flutter application.
+## Localization
+- `assets/translations/`
 
-A few resources to get you started if this is your first Flutter project:
+## CI
+GitHub Actions runs `flutter analyze` and `flutter test` on push/PR.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## License
+MIT
