@@ -22,7 +22,7 @@ class OnDutyScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: Container(
-          color: Colors.white.withOpacity(0.88),
+          color: Colors.white.withValues(alpha: 224),
           child: ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: list.length,
@@ -39,7 +39,7 @@ class OnDutyScreen extends StatelessWidget {
                         width: 34,
                         height: 34,
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.07),
+                          color: Colors.black.withValues(alpha: 18),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: const Icon(Icons.add, size: 22),

@@ -1,7 +1,3 @@
 {
-  "app_title": "Pill",
-  "medicine": "Medicine",
-  "on_duty": "On-duty Pharmacies",
-  "alarm": "Alarm",
-  "qa": "Q&A"
+  "welcome_title": "Welcome"
 }

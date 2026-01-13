@@ -10,14 +10,14 @@ class PillCard extends StatelessWidget {
     return Container(
       padding: padding,
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.94),
+        color: Colors.white.withValues(alpha: 240),
         borderRadius: BorderRadius.circular(18),
         boxShadow: [
           BoxShadow(
             blurRadius: 20,
             spreadRadius: 2,
             offset: const Offset(0, 10),
-            color: Colors.black.withOpacity(0.15),
+            color: Colors.black.withValues(alpha: 38),
           ),
         ],
       ),

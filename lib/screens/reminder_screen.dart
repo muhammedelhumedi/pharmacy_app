@@ -35,7 +35,7 @@ class ReminderScreen extends StatelessWidget {
                   Text(hh, style: const TextStyle(fontSize: 88, fontWeight: FontWeight.w900)),
                   Text(mm, style: const TextStyle(fontSize: 88, fontWeight: FontWeight.w900)),
                   const SizedBox(height: 8),
-                  Text('Sun, 09 July', style: TextStyle(color: Colors.black.withOpacity(0.7), fontWeight: FontWeight.w700)),
+                  Text('Sun, 09 July', style: TextStyle(color: Colors.black.withValues(alpha: 179), fontWeight: FontWeight.w700)),
                   const SizedBox(height: 18),
                   Container(
                     width: 340,

@@ -49,7 +49,7 @@ class _FeaturedProductsScreenState extends State<FeaturedProductsScreen> {
                       icon: const Icon(Icons.close),
                     ),
               filled: true,
-              fillColor: Colors.black12.withOpacity(0.10),
+              fillColor: Colors.black12.withValues(alpha: 26),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(14),
                 borderSide: BorderSide.none,
@@ -116,7 +116,7 @@ class _ProductTile extends StatelessWidget {
             width: 48,
             height: 48,
             decoration: BoxDecoration(
-              color: Colors.black12.withOpacity(0.25),
+              color: Colors.black12.withValues(alpha: 64),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(product.icon),

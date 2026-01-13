@@ -1,7 +1,3 @@
 {
-  "app_title": "Pill",
-  "medicine": "İlaç",
-  "on_duty": "Nöbetçi Eczaneler",
-  "alarm": "Alarm",
-  "qa": "Soru-Cevap"
+  "welcome_title": "Hoş geldiniz"
 }
