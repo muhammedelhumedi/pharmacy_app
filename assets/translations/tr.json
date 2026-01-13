@@ -1,3 +1,11 @@
 {
-  "welcome_title": "Hoş geldiniz"
+  "nav_home": "Ana Sayfa",
+  "nav_pharmacies": "Eczaneler",
+  "nav_on_duty": "Nöbetçi",
+  "nav_profile": "Profil",
+  "home_title": "Ana Sayfa",
+  "pharmacies_title": "Eczaneler",
+  "on_duty_title": "Nöbetçi Eczane",
+  "profile_title": "Profil",
+  "Search pharmacy...": "Eczane ara..."
 }

@@ -1,3 +1,11 @@
 {
-  "welcome_title": "أهلاً وسهلاً"
+  "nav_home": "الرئيسية",
+  "nav_pharmacies": "الصيدليات",
+  "nav_on_duty": "المناوبة",
+  "nav_profile": "الحساب",
+  "home_title": "الرئيسية",
+  "pharmacies_title": "الصيدليات",
+  "on_duty_title": "صيدليات المناوبة",
+  "profile_title": "الحساب",
+  "Search pharmacy...": "ابحث عن صيدلية..."
 }

@@ -1,3 +1,11 @@
 {
-  "welcome_title": "Welcome"
+  "nav_home": "Home",
+  "nav_pharmacies": "Pharmacies",
+  "nav_on_duty": "On duty",
+  "nav_profile": "Profile",
+  "home_title": "Home",
+  "pharmacies_title": "Pharmacies",
+  "on_duty_title": "On duty",
+  "profile_title": "Profile",
+  "Search pharmacy...": "Search pharmacy..."
 }

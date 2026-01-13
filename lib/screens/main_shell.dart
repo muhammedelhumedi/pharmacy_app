@@ -1,7 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+
 import 'home_screen.dart';
+import 'pharmacies_screen.dart';
 import 'on_duty_screen.dart';
-import 'reminder_screen.dart';
+import 'profile_screen.dart';
 
 class MainShell extends StatefulWidget {
   const MainShell({super.key});
@@ -13,37 +16,43 @@ class MainShell extends StatefulWidget {
 class _MainShellState extends State<MainShell> {
   int _index = 0;
 
-  final _pages = const [
+  final List<Widget> _pages = const [
     HomeScreen(),
+    PharmaciesScreen(),
     OnDutyScreen(),
-    const ReminderScreen(time: "09:00", message: "Take your medicine"),
     ProfileScreen(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_index],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _index,
-        onTap: (i) => setState(() => _index = i),
-        type: BottomNavigationBarType.fixed,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.local_pharmacy), label: 'On Duty'),
-          BottomNavigationBarItem(icon: Icon(Icons.alarm), label: 'Reminders'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+      body: IndexedStack(index: _index, children: _pages),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: _index,
+        onDestinationSelected: (i) => setState(() => _index = i),
+        destinations: [
+          NavigationDestination(
+            icon: const Icon(Icons.home_outlined),
+            selectedIcon: const Icon(Icons.home),
+            label: 'nav_home'.tr(),
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.local_pharmacy_outlined),
+            selectedIcon: const Icon(Icons.local_pharmacy),
+            label: 'nav_pharmacies'.tr(),
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.access_time_outlined),
+            selectedIcon: const Icon(Icons.access_time_filled),
+            label: 'nav_on_duty'.tr(),
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.person_outline),
+            selectedIcon: const Icon(Icons.person),
+            label: 'nav_profile'.tr(),
+          ),
         ],
       ),
     );
-  }
-}
-
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(child: Text('Profile'));
   }
 }

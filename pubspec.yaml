@@ -1,4 +1,3 @@
-# pubspec.yaml
 name: pill_app_clean
 description: Pill demo (Android + iOS + Web)
 publish_to: "none"
@@ -6,22 +5,21 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.10.0 <4.0.0"
+  sdk: ">=3.1.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
   easy_localization: ^3.0.7
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^3.0.0
 
 flutter:
-  generate: true
   uses-material-design: true
-
   assets:
     - assets/translations/

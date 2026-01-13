@@ -1,27 +1,44 @@
 import 'package:flutter/material.dart';
+import '../ui/tokens.dart';
 
 class PillCard extends StatelessWidget {
   final Widget child;
   final EdgeInsets padding;
-  const PillCard({super.key, required this.child, this.padding = const EdgeInsets.all(16)});
+  final VoidCallback? onTap;
+
+  const PillCard({
+    super.key,
+    required this.child,
+    this.padding = const EdgeInsets.all(14),
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    final cs = Theme.of(context).colorScheme;
+    final card = Container(
       padding: padding,
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 240),
-        borderRadius: BorderRadius.circular(18),
+        color: cs.surface,
+        borderRadius: Ui.br(),
+        border: Border.all(color: cs.outlineVariant.withValues(alpha: 0.6)),
         boxShadow: [
           BoxShadow(
-            blurRadius: 20,
-            spreadRadius: 2,
-            offset: const Offset(0, 10),
-            color: Colors.black.withValues(alpha: 38),
-          ),
+            blurRadius: 18,
+            offset: const Offset(0, 8),
+            color: Colors.black.withValues(alpha: 0.06),
+          )
         ],
       ),
       child: child,
+    );
+
+    if (onTap == null) return card;
+
+    return InkWell(
+      borderRadius: Ui.br(),
+      onTap: onTap,
+      child: card,
     );
   }
 }

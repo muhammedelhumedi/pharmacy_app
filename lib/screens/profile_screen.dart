@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 import 'role_switcher.dart';
 
-class OnDutyScreen extends StatelessWidget {
-  const OnDutyScreen({super.key});
+class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('title.on_duty'.tr()),
+        title: Text('title.profile'.tr()),
         actions: [
           IconButton(
             tooltip: 'Switch Role',
@@ -23,7 +23,7 @@ class OnDutyScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          'on_duty_title'.tr(),
+          'profile_title'.tr(),
           style: Theme.of(context).textTheme.headlineSmall,
         ),
       ),
